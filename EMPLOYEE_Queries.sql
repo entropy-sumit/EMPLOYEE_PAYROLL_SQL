@@ -30,6 +30,9 @@ Add Gender char(1) Not null default 'N'
 UPDATE employee_payroll SET Gender = 'M'
 WHERE name = 'Ravi'
 
+--UC7--
+ SELECT SUM(salary) FROM employee_payroll
+ WHERE Gender = 'M' GROUP BY Gender
 
 
 
