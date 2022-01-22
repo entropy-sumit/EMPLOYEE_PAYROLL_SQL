@@ -22,3 +22,14 @@ select *
 from employee_payroll
 where name='Ravi'
 
+--UC6--
+
+Alter table employee_payroll
+Add Gender char(1) Not null default 'N'
+
+UPDATE employee_payroll SET Gender = 'M'
+WHERE name = 'Ravi'
+
+
+
+
