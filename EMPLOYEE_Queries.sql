@@ -16,3 +16,9 @@ Insert into employee_payroll(name,salary,startDate) values('Ravi',51111,GETDATE(
 --UC4--
 select *
 from employee_payroll
+
+--UC5--
+select *
+from employee_payroll
+where name='Ravi'
+
