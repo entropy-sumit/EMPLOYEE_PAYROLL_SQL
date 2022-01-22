@@ -12,3 +12,7 @@ Create table employee_payroll
 )
 --UC3--
 Insert into employee_payroll(name,salary,startDate) values('Ravi',51111,GETDATE()),('Ajay',52333,GETDATE())
+
+--UC4--
+select *
+from employee_payroll
