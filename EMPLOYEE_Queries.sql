@@ -34,5 +34,11 @@ WHERE name = 'Ravi'
  SELECT SUM(salary) FROM employee_payroll
  WHERE Gender = 'M' GROUP BY Gender
 
+--UC8--
+ALTER TABLE employee_payroll add phone_number bigint;                  --Alter the table by adding new column
+alter table employee_payroll ALTER COLUMN phone_number VARCHAR(250);   --Alter any column of the table
+select *  from employee_payroll
+
+
 
 
