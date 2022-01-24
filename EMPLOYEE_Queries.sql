@@ -40,5 +40,7 @@ alter table employee_payroll ALTER COLUMN phone_number VARCHAR(250);   --Alter a
 select *  from employee_payroll
 
 
+alter table employee_payroll add address varchar(20) NOT NULL default'Grakhpur';
+select *  from employee_payroll
 
 
