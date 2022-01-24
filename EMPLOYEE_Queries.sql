@@ -40,5 +40,37 @@ alter table employee_payroll ALTER COLUMN phone_number VARCHAR(250);   --Alter a
 select *  from employee_payroll
 
 
+alter table employee_payroll add address varchar(20) NOT NULL default'Grakhpur';
+select *  from employee_payroll
+
+alter table employee_payroll add department varchar(20) NOT NULL default'EEE';
+select *  from employee_payroll
+
+--UC9--
+EXEC sp_RENAME 'employee_payroll.salary', 'Basic_Pay', 'COLUMN'; 
+select *  from employee_payroll;
+
+
+ALTER TABLE employee_payroll ADD Deductions FLOAT;
+select *  from employee_payroll;
+
+
+
+
+ALTER TABLE employee_payroll ADD Taxable_Pay FLOAT;
+select *  from employee_payroll;
+
+
+
+ALTER TABLE employee_payroll ADD Income_Tax FLOAT;
+select *  from employee_payroll;
+
+
+
+ALTER TABLE employee_payroll ADD Net_Pay FLOAT;
+select *  from employee_payroll;
+
+
+
 
 
